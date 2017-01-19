@@ -13,7 +13,7 @@ def new
   end
 
 def create
-    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
+    @portfolio_item = Portfolio.new(portfolio_params)
 
     if @portfolio_item.save
         redirect_to portfolios_path, notice: "Portfolio item was successfully created."
@@ -43,12 +43,16 @@ end
 def destroy
     @portfolio_item = Portfolio.find(params[:id])
     @portfolio_item.destroy
-    redirect_to portfolios_path
+    redirect_to portfolios_path, notice: "Portfolio item was removed."
   end 
 
 private
 
 def portfolio_params
-  params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image)
+  params.require(:portfolio).permit(:title,
+                                    :subtitle,
+                                    :body,
+                                    :main_image,
+                                    :thumb_image)
   end
 end
