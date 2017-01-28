@@ -1,4 +1,3 @@
-
 module ApplicationHelper
   def login_helper style = ''
     if current_user.is_a?(GuestUser)
@@ -59,5 +58,4 @@ module ApplicationHelper
   def active? path
     "active" if current_page? path
   end
-
 end
