@@ -1,0 +1,7 @@
+<% if flash[:alert] %>
+  <%= js add_gritter(flash[:alert], title: "Chaney Ventura Portfolio", sticky: false) %>
+<% elsif flash[:alert] %>
+  <%= js add_gritter(flash[:error], title: "Chaney Ventura Portfolio", sticky: false) %>
+<% else %>
+  <%= js add_gritter(flash[:notice], title: "Chaney Ventura Portfolio", sticky: false) %>
+<% end %>
