@@ -200,9 +200,8 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home.jpg') no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url('home.jpg') no-repeat;
   background-size: cover;
-  opacity: 0.5;
 }
 
 .app-footer{
@@ -225,7 +224,7 @@ body {
 .app-card-container {
   color: black;
   text-align: center;
-  opacity: 0.94;
+  opacity: 0.95;
 }
 
 .app-card-container > .card {
@@ -242,4 +241,9 @@ body {
 
 .app-card-container a {
   color: #3366cc;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
