@@ -7,10 +7,34 @@
     <div class="row">
       <div class="col-md-4">
         <%=image_tag "profile.png", width: 300, alt: "profile image", class: 'profile-img' %>
+
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class ='skill'>
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div
+                class="progress-bar progress-bar-striped bg-warning"
+                role="progressbar"
+                aria-valuenow="<%= skill.percent_utilized%>"
+                aria-valuemax="100"
+                style="width: <%= skill.percent_utilized %>%;"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
 
       <div class="col-md-8">
-        <p>Fullstack Developer.</p>
+        <p>I grew up in a house where computer time was limited. I'd tip-toe to the computer in the middle of the night to learn how to create the *perfect* MySpace layout. I memorized the steps to avoid floorboard creaks and typed ever so lightly to avoid awakening the grizzly upstairs with the tapping sound of an early 2000s HP keyboard.
+        <br>
+        <br>
+        Late nights have become full days! I'm excited to incorporate my pre-teen MySpace passion with my experience in marketing, content creation, and finance as I transition into the abundant world of development.
+
+        <br>
+        <br>
+        I'm Chaney. I love turning words into functionality and {#symbols} into design.</p>
 
         <p>
           <button
@@ -48,6 +72,11 @@
             <div class"card card-block">
               Teller • <em>Wells Fargo Bank</em>
             </div>
+
+            <div class"card card-block">
+              Personal Assistant to the VP • <em>Ideal Living Management</em>
+            </div>
+
           </div>
 
             <div class="collapse" id="education">

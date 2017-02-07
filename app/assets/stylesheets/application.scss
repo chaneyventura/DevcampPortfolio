@@ -200,7 +200,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), image-url('home.jpg') no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url('home.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -224,7 +224,7 @@ body {
 .app-card-container {
   color: black;
   text-align: center;
-  opacity: 0.95;
+  opacity: 0.93;
 }
 
 .app-card-container > .card {
@@ -246,4 +246,9 @@ body {
 .card-block {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
