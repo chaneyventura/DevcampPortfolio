@@ -5,6 +5,8 @@
     <p><em>Imported from Chicago.</em></p>
   </div>
 
+  <%= source_helper("alert alert-info blog-sidebar-source") %>
+  
   <div class="sidebar-module">
     <span>
     <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
