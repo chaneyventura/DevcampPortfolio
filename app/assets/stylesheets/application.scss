@@ -29,11 +29,21 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Lato', sans-serif;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Comfortaa', cursive;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -252,3 +262,18 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.about-module {
+  padding: 1rem;
+  /*margin: 0 -1rem 1rem;*/
+}
+
+.about-module-inset p:last-child,
+.about-module-inset ul:last-child,
+.about-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+.social-links {
+  font-size: 2em;
+  }

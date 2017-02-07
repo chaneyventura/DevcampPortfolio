@@ -6,6 +6,10 @@
   </div>
 
   <div class="sidebar-module">
+    <span>
+    <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+    </span>
+    
     <h4>Topics</h4>
     <% @side_bar_topics.each do |topic| %>
       <p><%= link_to topic.title, topic_path(topic) %></p>
