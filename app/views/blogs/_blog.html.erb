@@ -3,7 +3,10 @@
   <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago </a></p>
 
   <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
-  <td><%= blog.body %></td>
+  <td>
+    <%= truncate blog.body, :length => 160 %>
+    <%= link_to 'read more', blog %>
+  </td> 
 
   </tr>
 
