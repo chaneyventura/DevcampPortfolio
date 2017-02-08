@@ -4,7 +4,7 @@
 
   <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
   <td>
-    <%= truncate blog.body, :length => 160 %>
+    <%= markdown(blog.body.truncate(325)) %>
     <%= link_to 'read more', blog %>
   </td> 
 
