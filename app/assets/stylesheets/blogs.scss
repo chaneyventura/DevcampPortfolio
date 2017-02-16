@@ -89,9 +89,9 @@ h6, .h6 {
   padding-bottom: 3.6rem;
   margin-bottom: 4rem;
   border-bottom: .05rem solid #eee;
-  background: image-url('ROUTES.png') no-repeat;
+  background: image-url('ROUTES.png') 50% no-repeat;
   min-width: 100%;
-  background-size: 1280px 200px;
+  background-size: contain;
   background-position: left;
 }
 .blog-title {
@@ -100,7 +100,7 @@ h6, .h6 {
   font-weight: normal;
 }
 .blog-description {
-  font-size: 1.1rem;
+  font-size: .5em;
   color: #999;
 }
 
@@ -150,7 +150,7 @@ h6, .h6 {
 }
 .blog-post-title {
   margin-bottom: .25rem;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-color: #002c54;
 }
 .blog-post-meta {
@@ -158,6 +158,9 @@ h6, .h6 {
   color: #999;
 }
 
+.blog-post a{
+  color: #7093ad
+}
 
 /*
  * Footer
@@ -178,10 +181,6 @@ h6, .h6 {
 /*
  * Custom styles
  */
-
-.social-links {
-  font-size: 2em;
-}
 
 .comment-card > .card {
   margin-top: 15px;
@@ -212,6 +211,17 @@ h6, .h6 {
   text-align: center;
  }
 
+.sidebar-module a{
+  color: #7093ad;
+}
+
+.social-links {
+  font-size: 2em;
+}
+
+.social-links a {
+  color: #57ccca;
+}
  
 .blogcrumb a {
   font-size: 1.25em;
@@ -236,7 +246,7 @@ h6, .h6 {
 .navbar-light .navbar-nav .nav-link {
  color: #021c63;
  &.nav-link:hover {
-   color: #5de2e0;
+   color: white;
  }
 }
 
