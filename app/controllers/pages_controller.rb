@@ -11,6 +11,9 @@ class PagesController < ApplicationController
   def contact
   end
 
+  def mobile
+  end
+
   def tech_news
     @tweets = SocialTool.twitter_search
   end
